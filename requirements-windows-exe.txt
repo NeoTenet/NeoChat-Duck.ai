@@ -1,0 +1,7 @@
+# Lean Windows EXE build requirements.
+requests
+pillow
+fastapi
+uvicorn
+python-multipart
+pyinstaller>=6.10

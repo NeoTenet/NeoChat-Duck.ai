@@ -1,0 +1,29 @@
+name: Build Neo AI Terminal Lightweight Portable (Windows)
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'lightweight-v*'
+
+permissions:
+  contents: read
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Build lightweight launcher and portable ZIP
+        shell: cmd
+        run: build_lightweight_portable.bat
+
+      - name: Upload portable package
+        uses: actions/upload-artifact@v4
+        with:
+          name: NeoAI-Terminal-Lightweight-Portable-Windows
+          path: dist/NeoAI-Terminal-Lightweight-Portable-Windows.zip
+          if-no-files-found: error
+          retention-days: 30

@@ -1,0 +1,7 @@
+# Core requirements for DuckAi CLI + Neo AI web dashboard
+requests
+pillow
+fastapi
+uvicorn[standard]
+python-multipart
+keyring>=25.6.0

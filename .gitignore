@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Node
+node_modules/
+package-lock.json
+
+# Generated images
+duckai_*.jpg
+duckai_*.png
+duckai_*.webp
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local HAR captures / debug dumps (may contain session cookies)
+download
+*.har
+bundle_search.txt
+
+# Neo AI dashboard generated files
+generated/*
+!generated/.gitkeep
+
+# Local Neo AI dashboard conversation database
+neo_ai_terminal.sqlite3*
+
+# Windows executable packaging
+node_runtime/
+build/
+dist/
+*.spec.bak
+
+node/
+data/
+portable.flag
