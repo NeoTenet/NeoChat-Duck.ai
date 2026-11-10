@@ -86,7 +86,7 @@ The following images are actual Neo AI Terminal dashboard screenshots supplied b
   <sub>Dashboard view — screenshot 3 — <a href="readme-images/3.png">نمایش / دانلود تصویر</a></sub>
 </p>
 
-> All three images are stored in this repository under `readme-images/` and are displayed locally; no external image host is required.
+> Images are loaded from the external `imgurl.ir` host, so an internet connection is required to display them on GitHub.
 
 
 The actual web frontend is in `web/` and is served by FastAPI:
@@ -103,7 +103,7 @@ The actual web frontend is in `web/` and is served by FastAPI:
 
 The UI uses a navy/purple panel design with cyan and violet accents, a persistent sidebar on desktop, a responsive mobile navigation drawer, custom themed select controls, Vazir for Persian, and Bebas Neue for English.
 
-> The images above are the three real dashboard screenshots supplied by the project owner and stored locally in `readme-images/`.
+> The bundled `screenshots/` directory retains legacy CLI reference images; the actual dashboard screenshots are embedded above from image links supplied by the project owner.
 
 ## Installation
 
@@ -199,7 +199,7 @@ The supplied v2.6.2 source passed **65 offline tests** in the review run. The su
 │   ├── index.html             # HTML served by FastAPI
 │   └── assets/                # Served CSS and JavaScript
 ├── tests/                     # Offline tests
-├── readme-images/              # Three real dashboard screenshots shown in the READMEs
+├── screenshots/               # CLI reference images
 ├── generated/                 # Local generated outputs
 ├── requirements*.txt          # Python dependencies
 └── build_*                    # Windows packaging scripts
